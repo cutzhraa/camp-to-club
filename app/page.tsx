@@ -38,10 +38,8 @@ export default function GiftPage() {
           <div className="flex-1 px-5 py-4 flex flex-col">
             <div className="relative rounded-[20px] overflow-hidden bg-black border-2 border-white/10 aspect-[4/5]">
               <img src={photos[slide].src} alt="foto" className="w-full h-full object-cover" />
-              <div className="absolute top-3 left-3 bg-black/70 text-white text-[10px] px-3 py-1 rounded-full font-bold backdrop-blur">{photos[slide].tag}</div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent pointer-events-none" />
               <div className="absolute bottom-0 p-4 text-left w-full">
-                <h2 className="text-white font-black text-lg leading-tight">{photos[slide].title}</h2>
                 <p className="text-white/70 text-xs mt-1">{photos[slide].desc}</p>
               </div>
               <button onClick={()=>setSlide(s=>s>0?s-1:2)} className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/20 backdrop-blur rounded-full text-white">‹</button>
